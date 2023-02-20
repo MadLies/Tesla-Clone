@@ -517,6 +517,14 @@ video {
   margin-left: 2rem;
 }
 
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .flex {
   display: flex;
 }
@@ -537,6 +545,10 @@ video {
   cursor: pointer;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -547,16 +559,14 @@ video {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.bg-\[url\(\'https\:\/\/tesla-cdn\.thron\.com\/delivery\/public\/image\/tesla\/a269d7b4-87a9-4057-9ac5-2565e56a188e\/bvlatuR\/std\/4096x2560\/Homepage-Model-3-Desktop-LHD\?quality\=auto-medium\&amp\;format\=auto\'\)\] {
-  background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/a269d7b4-87a9-4057-9ac5-2565e56a188e/bvlatuR/std/4096x2560/Homepage-Model-3-Desktop-LHD?quality=auto-medium&amp;format=auto');
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .bg-\[url\(\'https\:\/\/tesla-cdn\.thron\.com\/delivery\/public\/image\/tesla\/e90a341e-f9ca-4aa1-8eab-94afea118786\/bvlatuR\/std\/2880x1800\/M3-Homepage-D\'\)\] {
   background-image: url('https://tesla-cdn.thron.com/delivery/public/image/tesla/e90a341e-f9ca-4aa1-8eab-94afea118786/bvlatuR/std/2880x1800/M3-Homepage-D');
-}
-
-.bg-\[url\(\'https\:\/\/thumbs\.dreamstime\.com\/z\/podemos-relacionarnos-una-s\%C3\%BAper-foto-de-dos-patos-mallard-femeninos-que-parecen-estar-bes\%C3\%A1ndose-199471213\.jpg\'\)\] {
-  background-image: url('https://thumbs.dreamstime.com/z/podemos-relacionarnos-una-s%C3%BAper-foto-de-dos-patos-mallard-femeninos-que-parecen-estar-bes%C3%A1ndose-199471213.jpg');
 }
 
 .bg-cover {
@@ -581,22 +591,18 @@ video {
   padding-top: 1.25rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
 
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
+@font-face {
+  font-family: Gotham Book;
+
+  src: url("../public/GothamBook.ttf");
 }
 
-.underline {
-  text-decoration-line: underline;
+* {
+  font-family: Gotham Book, sans-serif;
 }
 
 .hover\:rounded-full:hover {
